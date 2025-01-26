@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import { TowerControl as GameController } from "lucide-react";
 import CookieConsent from '@/components/CookieConsent';
 import Link from 'next/link';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -189,6 +190,7 @@ export default function RootLayout({
           </div>
         </footer>
         <CookieConsent />
+        <SpeedInsights />
       </body>
     </html>
   );
